@@ -21,7 +21,7 @@ africains, et comment les inégalités de revenu, le chômage des jeunes et l'in
 
 ## Précision méthodologique : Gini ≠ taux de pauvreté
 Le **taux de pauvreté** (part de la population sous un seuil absolu de revenu) et l'**indice de
-Gini** (mesure relative de dispersion des revenus) sont deux indicateurs distincts — un pays peut
+Gini** (mesure relative de dispersion des revenus) sont deux indicateurs distincts  -  un pays peut
 avoir une distribution très inégale (Gini élevé) sans forte pauvreté absolue, et inversement. La
 corrélation observée dans ce projet entre les deux indicateurs est modérée (r=0,31), confirmant
 empiriquement qu'ils ne doivent pas être utilisés l'un pour l'autre.
@@ -39,12 +39,12 @@ empiriquement qu'ils ne doivent pas être utilisés l'un pour l'autre.
 
 ## Résultats clés
 - Classification : AUC=0,87-0,88 en validation croisée (régression logistique et Random Forest
-  proches) — performance solide sur 186 observations. Facteurs les plus associés (régression
+  proches)  -  performance solide sur 186 observations. Facteurs les plus associés (régression
   logistique, meilleur modèle) : indice de Gini, part de l'emploi agricole, PIB par habitant.
-- Clustering : 2 catégories nettes — pays à économie diversifiée (PIB élevé, 13% pauvreté
+- Clustering : 2 catégories nettes  -  pays à économie diversifiée (PIB élevé, 13% pauvreté
   moyenne, 21% d'emploi agricole) vs pays à dominante agricole (PIB faible, 45% pauvreté
   moyenne, 53% d'emploi agricole).
-- Corrélation Gini/pauvreté : 0,31 — confirme la distinction conceptuelle.
+- Corrélation Gini/pauvreté : 0,31  -  confirme la distinction conceptuelle.
 - Prévisions d'inflation 2028 : Nigeria et Égypte restent en zone de forte inflation (>25%),
   Côte d'Ivoire et Kenya en zone modérée (<8%).
 - Carte : RD Congo (85%), Mozambique (81%), Soudan du Sud (77%) les plus touchés ; Algérie,
@@ -66,7 +66,7 @@ Voir [`ARTICLE.md`](ARTICLE.md) pour l'analyse narrative complète avec interpr�
 recommandations.
 
 ## Auteur
-Média Marcel Bakayoko — Expert géomatique / données géospatiales & agricoles / GeoAI / Suivi-Évaluation.
+Média Marcel Bakayoko  -  Expert géomatique / données géospatiales & agricoles / GeoAI / Suivi-Évaluation.
 
 ## Licence des données
-World Bank Open Data — CC BY 4.0.
+World Bank Open Data  -  CC BY 4.0.

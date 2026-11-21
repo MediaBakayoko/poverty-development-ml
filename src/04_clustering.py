@@ -1,5 +1,5 @@
 """
-04_clustering.py — Classification du niveau de vie des pays africains (clustering K-Means sur
+04_clustering.py  -  Classification du niveau de vie des pays africains (clustering K-Means sur
 PIB/habitant, pauvreté, Gini, chômage des jeunes, structure de l'emploi) pour construire des
 catégories socioéconomiques homogènes.
 

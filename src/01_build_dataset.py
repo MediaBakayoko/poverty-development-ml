@@ -1,5 +1,5 @@
 """
-01_build_dataset.py — Construit le panel pays-année Afrique sur la pauvreté, les inégalités
+01_build_dataset.py  -  Construit le panel pays-année Afrique sur la pauvreté, les inégalités
 (Gini), le chômage des jeunes, l'inflation et la structure de l'emploi.
 
 Source : World Bank Open Data API, accès libre sans inscription.
@@ -7,7 +7,7 @@ Source : World Bank Open Data API, accès libre sans inscription.
 
 Indicateurs :
     SI.POV.NAHC   : taux de pauvreté au seuil national (%)
-    SI.POV.DDAY   : taux de pauvreté au seuil $3.00/jour PPA 2021 (%) — cible principale
+    SI.POV.DDAY   : taux de pauvreté au seuil $3.00/jour PPA 2021 (%)  -  cible principale
     SI.POV.GINI   : indice de Gini (inégalités de revenu)
     NY.GDP.PCAP.CD / .KD.ZG : PIB par habitant et croissance
     FP.CPI.TOTL.ZG : inflation (IPC, % annuel)
@@ -18,7 +18,7 @@ Indicateurs :
 Sortie : data/processed/poverty_africa_full.csv, poverty_africa_2000_2023.csv
 
 IMPORTANT : le taux de pauvreté monétaire (SI.POV.DDAY/NAHC) et l'indice de Gini (inégalité
-relative de la distribution des revenus) sont deux concepts DIFFÉRENTS — un pays peut avoir un
+relative de la distribution des revenus) sont deux concepts DIFFÉRENTS  -  un pays peut avoir un
 Gini élevé (forte inégalité) sans avoir un taux de pauvreté élevé, et inversement. Ce projet les
 traite comme deux variables distinctes, jamais comme des synonymes.
 """

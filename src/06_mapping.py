@@ -1,5 +1,5 @@
 """
-06_mapping.py — Carte du taux de pauvreté ($3/jour PPA 2021) par pays africain (dernière année
+06_mapping.py  -  Carte du taux de pauvreté ($3/jour PPA 2021) par pays africain (dernière année
 disponible), pour visualiser les disparités territoriales de pauvreté monétaire à l'échelle
 continentale.
 
@@ -42,14 +42,14 @@ def run():
                 ax.annotate(f"{row['NAME_FR']}\n{row['poverty_rate_300ppp']:.0f}%", (c.x, c.y),
                             fontsize=6.5, fontweight="bold", ha="center", va="center", color="black",
                             bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.75))
-        ax.set_title("Taux de pauvreté monétaire — Afrique (World Bank)")
+        ax.set_title("Taux de pauvreté monétaire  -  Afrique (World Bank)")
         ax.axis("off")
         plt.tight_layout()
         plt.savefig(os.path.join(MAP_DIR, "poverty_rate_map.png"), dpi=220, bbox_inches="tight")
         plt.close()
         print(f"Carte sauvegardée : {MAP_DIR}/poverty_rate_map.png")
     except Exception as e:
-        print(f"Carte non générée ({e}) — tableau country_summary.csv disponible en alternative.")
+        print(f"Carte non générée ({e})  -  tableau country_summary.csv disponible en alternative.")
 
     return latest
 

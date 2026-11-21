@@ -1,5 +1,5 @@
 """
-03_classification.py — Classification des ménages/pays à risque de pauvreté élevée
+03_classification.py  -  Classification des ménages/pays à risque de pauvreté élevée
 (seuil $3/jour PPA 2021 > 40%, médiane approximative de l'échantillon africain) via Random Forest,
 comparé à une régression logistique.
 
@@ -66,7 +66,7 @@ def run():
 
     plt.plot([0, 1], [0, 1], "k--")
     plt.xlabel("Taux de faux positifs"); plt.ylabel("Taux de vrais positifs")
-    plt.title(f"Courbes ROC — pauvreté élevée (>{THRESHOLD}% sous $3/jour PPA)")
+    plt.title(f"Courbes ROC  -  pauvreté élevée (>{THRESHOLD}% sous $3/jour PPA)")
     plt.legend(); plt.tight_layout()
     plt.savefig(os.path.join(FIG_DIR, "roc_curve.png"), dpi=150)
     plt.close()

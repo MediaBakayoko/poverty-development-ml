@@ -1,10 +1,10 @@
 # Pauvreté et développement en Afrique : ce que révèlent 23 ans de données économiques
 
-*Média Marcel Bakayoko — Expert géomatique / données géospatiales & agricoles / GeoAI / Suivi-Évaluation*
+*Média Marcel Bakayoko  -  Expert géomatique / données géospatiales & agricoles / GeoAI / Suivi-Évaluation*
 
 ## Le problème
 
-La pauvreté monétaire en Afrique reste très hétérogène — de pays quasiment sortis de la pauvreté
+La pauvreté monétaire en Afrique reste très hétérogène  -  de pays quasiment sortis de la pauvreté
 extrême à d'autres où plus de 80% de la population vit sous le seuil de $3/jour (parité de pouvoir
 d'achat 2021). Ce projet mobilise les données ouvertes de la Banque Mondiale pour identifier les
 facteurs structurels associés à la pauvreté, construire des catégories socioéconomiques de pays,
@@ -22,7 +22,7 @@ part de l'emploi agricole.
 
 L'indice de Gini mesure l'inégalité relative de la distribution des revenus ; le taux de pauvreté
 mesure la part de la population sous un seuil absolu. Ce projet calcule explicitement leur
-corrélation empirique sur l'échantillon africain : **r = 0,31** — une corrélation faible à
+corrélation empirique sur l'échantillon africain : **r = 0,31**  -  une corrélation faible à
 modérée, qui confirme qu'un pays très inégalitaire n'est pas nécessairement un pays très pauvre
 (et inversement). Confondre les deux conduirait à des erreurs de diagnostic et de ciblage des
 politiques publiques.
@@ -32,7 +32,7 @@ politiques publiques.
 ![Tendance de pauvreté](reports/figures/poverty_trend.png)
 
 Le taux de pauvreté moyen africain montre une évolution contrastée sur la période, avec des écarts
-importants selon les pays disponibles dans l'échantillon à chaque période — la trajectoire
+importants selon les pays disponibles dans l'échantillon à chaque période  -  la trajectoire
 continentale masque des dynamiques nationales très différentes, comme le confirme la carte ci-dessous.
 
 ## Peut-on prédire les pays à risque de pauvreté élevée ?
@@ -49,7 +49,7 @@ cet échantillon de taille modérée (186 observations).
 
 Les facteurs les plus discriminants du risque de pauvreté élevée, selon le modèle retenu
 (régression logistique, coefficients standardisés), sont l'**indice de Gini**, la **part de
-l'emploi agricole** et le **PIB par habitant** — une économie dominée par l'agriculture de
+l'emploi agricole** et le **PIB par habitant**  -  une économie dominée par l'agriculture de
 subsistance, un PIB par habitant faible et une forte inégalité de revenu restent les signaux les
 plus forts de pauvreté structurelle, cohérent avec la littérature en économie du développement.
 
@@ -60,9 +60,9 @@ plus forts de pauvreté structurelle, cohérent avec la littérature en économi
 Le clustering K-Means sur le PIB par habitant, le taux de pauvreté, le Gini, le chômage des
 jeunes et la part de l'emploi agricole fait émerger **deux groupes nets** de pays :
 - **Groupe 1 (15 pays)** : PIB par habitant moyen ≈ 5 100 $, pauvreté moyenne 13%, emploi
-  agricole 21% — économies plus diversifiées.
+  agricole 21%  -  économies plus diversifiées.
 - **Groupe 2 (34 pays)** : PIB par habitant moyen ≈ 1 235 $, pauvreté moyenne 45%, emploi
-  agricole 53% — économies à dominante agricole, vulnérabilité structurelle plus marquée.
+  agricole 53%  -  économies à dominante agricole, vulnérabilité structurelle plus marquée.
 
 Cette bipartition nette (2 clusters optimaux au sens du score de silhouette) illustre une fracture
 économique persistante sur le continent, davantage liée à la structure productive (poids de
@@ -74,12 +74,12 @@ l'agriculture de subsistance) qu'à la seule géographie.
 
 Des prévisions à 5 ans (lissage exponentiel de Holt amorti) ont été produites pour six économies
 représentatives :
-- **Nigeria** : 24,7% (2023) → 25,7% (2028 prévu) — inflation structurellement élevée et persistante.
-- **Égypte** : 33,9% (2023) → 39,7% (2028 prévu) — trajectoire préoccupante.
-- **Ghana** : 38,1% (2023) → 27,8% (2028 prévu) — désinflation progressive anticipée.
-- **Côte d'Ivoire** : 4,4% (2023) → 2,2% (2028 prévu) — zone de stabilité monétaire (UEMOA).
-- **Kenya** : 7,7% (2023) → 7,0% (2028 prévu) — stabilité relative.
-- **Afrique du Sud** : 6,1% (2023) → 5,2% (2028 prévu) — proche de la cible de la banque centrale.
+- **Nigeria** : 24,7% (2023) → 25,7% (2028 prévu)  -  inflation structurellement élevée et persistante.
+- **Égypte** : 33,9% (2023) → 39,7% (2028 prévu)  -  trajectoire préoccupante.
+- **Ghana** : 38,1% (2023) → 27,8% (2028 prévu)  -  désinflation progressive anticipée.
+- **Côte d'Ivoire** : 4,4% (2023) → 2,2% (2028 prévu)  -  zone de stabilité monétaire (UEMOA).
+- **Kenya** : 7,7% (2023) → 7,0% (2028 prévu)  -  stabilité relative.
+- **Afrique du Sud** : 6,1% (2023) → 5,2% (2028 prévu)  -  proche de la cible de la banque centrale.
 
 Ces prévisions, à prendre comme projections tendancielles et non comme certitudes, illustrent des
 trajectoires très différenciées selon les régimes monétaires (zone UEMOA à change fixe vs régimes
@@ -97,7 +97,7 @@ Centrafrique (72%), Madagascar (69%). À l'opposé, l'Algérie (0%), Tunisie, Ma
 ## Recommandations
 
 1. **Cibler les investissements productifs sur le groupe de pays à dominante agricole** (cluster 2)
-   pour diversifier l'économie et réduire la dépendance à l'agriculture de subsistance — levier
+   pour diversifier l'économie et réduire la dépendance à l'agriculture de subsistance  -  levier
    structurel le plus fortement associé à la réduction de la pauvreté dans cette analyse.
 2. **Ne pas utiliser le Gini comme proxy de pauvreté** dans le ciblage des politiques sociales : la
    faible corrélation observée (0,31) implique que des interventions anti-inégalités et anti-pauvreté
@@ -109,13 +109,13 @@ Centrafrique (72%), Madagascar (69%). À l'opposé, l'Algérie (0%), Tunisie, Ma
 
 ## Limites
 
-- Le taux de pauvreté au seuil $3/jour PPA n'est pas disponible chaque année pour tous les pays —
+- Le taux de pauvreté au seuil $3/jour PPA n'est pas disponible chaque année pour tous les pays  - 
   les comparaisons inter-pays portent sur des années parfois éloignées (voir `reports/country_summary.csv`).
 - Les prévisions d'inflation reposent sur un modèle de lissage exponentiel simple (tendance
   amortie), qui ne capture pas les chocs exogènes (crises de change, chocs pétroliers, conflits).
 - Le clustering à 2 groupes, bien que statistiquement optimal (score de silhouette), simplifie une
-  réalité plus continue — des catégories intermédiaires existent mais sont absorbées dans les
+  réalité plus continue  -  des catégories intermédiaires existent mais sont absorbées dans les
   deux groupes dominants.
 
 ---
-*Source : World Bank Open Data, https://data.worldbank.org — CC BY 4.0.*
+*Source : World Bank Open Data, https://data.worldbank.org  -  CC BY 4.0.*

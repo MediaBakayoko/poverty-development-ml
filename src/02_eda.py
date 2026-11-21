@@ -1,5 +1,5 @@
 """
-02_eda.py — Analyse exploratoire du panel pauvreté/développement Afrique (2000-2023).
+02_eda.py  -  Analyse exploratoire du panel pauvreté/développement Afrique (2000-2023).
 Sortie : reports/figures/poverty_trend.png, distributions.png, correlation_heatmap.png,
          gini_vs_poverty.png
 """
@@ -26,7 +26,7 @@ def run():
     trend = df.groupby("year")["poverty_rate_300ppp"].mean()
     plt.figure(figsize=(8, 5))
     plt.plot(trend.index, trend.values, marker="o", color="firebrick")
-    plt.title("Taux de pauvreté moyen ($3/j PPA 2021) — Afrique")
+    plt.title("Taux de pauvreté moyen ($3/j PPA 2021)  -  Afrique")
     plt.xlabel("Année"); plt.ylabel("Taux de pauvreté (%)")
     plt.tight_layout()
     plt.savefig(os.path.join(FIG_DIR, "poverty_trend.png"), dpi=150)
@@ -42,18 +42,18 @@ def run():
 
     plt.figure(figsize=(8, 6))
     sns.heatmap(df[NUM_COLS].corr(), annot=True, fmt=".2f", cmap="coolwarm", center=0)
-    plt.title("Corrélations — pauvreté, inégalités et facteurs économiques")
+    plt.title("Corrélations  -  pauvreté, inégalités et facteurs économiques")
     plt.tight_layout()
     plt.savefig(os.path.join(FIG_DIR, "correlation_heatmap.png"), dpi=150)
     plt.close()
 
-    # Rappel méthodologique : Gini (inégalité relative) vs taux de pauvreté (absolu) — pas identiques
+    # Rappel méthodologique : Gini (inégalité relative) vs taux de pauvreté (absolu)  -  pas identiques
     gini_pov = df.dropna(subset=["gini", "poverty_rate_300ppp"])
     plt.figure(figsize=(7, 7))
     plt.scatter(gini_pov["gini"], gini_pov["poverty_rate_300ppp"], alpha=0.6, color="slateblue")
     plt.xlabel("Indice de Gini (inégalité de revenu)")
     plt.ylabel("Taux de pauvreté ($3/j PPA 2021, %)")
-    plt.title("Gini vs taux de pauvreté — des concepts distincts\n(corrélation imparfaite attendue)")
+    plt.title("Gini vs taux de pauvreté  -  des concepts distincts\n(corrélation imparfaite attendue)")
     plt.tight_layout()
     plt.savefig(os.path.join(FIG_DIR, "gini_vs_poverty.png"), dpi=150)
     plt.close()

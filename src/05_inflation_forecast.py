@@ -1,5 +1,5 @@
 """
-05_inflation_forecast.py — Prévision de l'inflation (séries temporelles) pour quelques pays
+05_inflation_forecast.py  -  Prévision de l'inflation (séries temporelles) pour quelques pays
 représentatifs, via lissage exponentiel de Holt (tendance), en complément d'une analyse de la
 volatilité inflationniste continentale.
 
