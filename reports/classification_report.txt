@@ -1,0 +1,6 @@
+Seuil 'pauvreté élevée' : taux $3/jour PPA 2021 > 40%
+
+LogisticRegression: {'AUC_test': np.float64(0.8654545454545455), 'AUC_cv_mean': np.float64(0.8823443223443224), 'AUC_cv_std': np.float64(0.04634439414516054)}
+RandomForest: {'AUC_test': np.float64(0.7963636363636364), 'AUC_cv_mean': np.float64(0.8862271062271063), 'AUC_cv_std': np.float64(0.07200298758935535)}
+
+Meilleur modèle: LogisticRegression

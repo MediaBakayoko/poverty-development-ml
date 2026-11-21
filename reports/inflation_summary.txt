@@ -1,0 +1,8 @@
+Prévisions d'inflation par pays (horizon 5 ans, Holt amorti):
+
+CIV: inflation 2023=4.4%, prévision 2028=2.2%
+NGA: inflation 2023=24.7%, prévision 2028=25.7%
+ZAF: inflation 2023=6.1%, prévision 2028=5.2%
+EGY: inflation 2023=33.9%, prévision 2028=39.7%
+KEN: inflation 2023=7.7%, prévision 2028=7.0%
+GHA: inflation 2023=38.1%, prévision 2028=27.8%
