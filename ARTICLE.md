@@ -47,10 +47,11 @@ cet échantillon de taille modérée (186 observations).
 
 ![Importance des variables](reports/figures/feature_importance.png)
 
-Les facteurs les plus discriminants du risque de pauvreté élevée incluent le PIB par habitant,
-l'indice de Gini et la part de l'emploi agricole — une économie dominée par l'agriculture de
-subsistance et un PIB par habitant faible restent les signaux les plus forts de pauvreté
-structurelle, cohérent avec la littérature en économie du développement.
+Les facteurs les plus discriminants du risque de pauvreté élevée, selon le modèle retenu
+(régression logistique, coefficients standardisés), sont l'**indice de Gini**, la **part de
+l'emploi agricole** et le **PIB par habitant** — une économie dominée par l'agriculture de
+subsistance, un PIB par habitant faible et une forte inégalité de revenu restent les signaux les
+plus forts de pauvreté structurelle, cohérent avec la littérature en économie du développement.
 
 ## Deux Afriques économiques
 

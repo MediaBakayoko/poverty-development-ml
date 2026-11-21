@@ -39,7 +39,8 @@ empiriquement qu'ils ne doivent pas être utilisés l'un pour l'autre.
 
 ## Résultats clés
 - Classification : AUC=0,87-0,88 en validation croisée (régression logistique et Random Forest
-  proches) — performance solide sur 186 observations.
+  proches) — performance solide sur 186 observations. Facteurs les plus associés (régression
+  logistique, meilleur modèle) : indice de Gini, part de l'emploi agricole, PIB par habitant.
 - Clustering : 2 catégories nettes — pays à économie diversifiée (PIB élevé, 13% pauvreté
   moyenne, 21% d'emploi agricole) vs pays à dominante agricole (PIB faible, 45% pauvreté
   moyenne, 53% d'emploi agricole).

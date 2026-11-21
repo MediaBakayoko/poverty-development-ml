@@ -4,3 +4,11 @@ LogisticRegression: {'AUC_test': np.float64(0.8654545454545455), 'AUC_cv_mean': 
 RandomForest: {'AUC_test': np.float64(0.7963636363636364), 'AUC_cv_mean': np.float64(0.8862271062271063), 'AUC_cv_std': np.float64(0.07200298758935535)}
 
 Meilleur modèle: LogisticRegression
+
+Facteurs les plus discriminants:
+gini                         1.337382
+employment_agriculture       1.194268
+gdp_per_capita               1.074164
+labor_force_participation    0.354035
+inflation                    0.192612
+youth_unemployment           0.153713

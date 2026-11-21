@@ -75,22 +75,27 @@ def run():
     best_model = models[best_name]
     if hasattr(best_model, "feature_importances_"):
         importances = pd.Series(best_model.feature_importances_, index=feats).sort_values(ascending=False)
-        plt.figure(figsize=(7, 5))
-        importances.plot(kind="barh", color="crimson")
-        plt.gca().invert_yaxis()
-        plt.title(f"Facteurs associés à une pauvreté élevée ({best_name})")
-        plt.tight_layout()
-        plt.savefig(os.path.join(FIG_DIR, "feature_importance.png"), dpi=150)
-        plt.close()
-        print(importances)
+        title = f"Facteurs associés à une pauvreté élevée ({best_name})"
+    else:
+        # Régression logistique : utiliser la valeur absolue des coefficients (sur variables standardisées)
+        importances = pd.Series(np.abs(best_model.coef_[0]), index=feats).sort_values(ascending=False)
+        title = f"Facteurs associés à une pauvreté élevée (|coefficients|, {best_name})"
+
+    plt.figure(figsize=(7, 5))
+    importances.plot(kind="barh", color="crimson")
+    plt.gca().invert_yaxis()
+    plt.title(title)
+    plt.tight_layout()
+    plt.savefig(os.path.join(FIG_DIR, "feature_importance.png"), dpi=150)
+    plt.close()
+    print(importances)
 
     with open(os.path.join(REPORT_DIR, "classification_report.txt"), "w", encoding="utf-8") as f:
         f.write(f"Seuil 'pauvreté élevée' : taux $3/jour PPA 2021 > {THRESHOLD}%\n\n")
         for name, r in results.items():
             f.write(f"{name}: {r}\n")
         f.write(f"\nMeilleur modèle: {best_name}\n")
-        if hasattr(best_model, "feature_importances_"):
-            f.write("\nFacteurs les plus discriminants:\n" + importances.to_string())
+        f.write("\nFacteurs les plus discriminants:\n" + importances.to_string())
 
     return results
 
