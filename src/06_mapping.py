@@ -36,6 +36,11 @@ def run():
         merged.plot(column="poverty_rate_300ppp", cmap="OrRd", legend=True, ax=ax,
                     edgecolor="black", linewidth=0.3, missing_kwds={"color": "lightgrey"},
                     legend_kwds={"label": "Taux de pauvreté ($3/j PPA 2021, %), dernière année", "shrink": 0.6})
+        for _, row in merged.iterrows():
+            if pd.notna(row.get("poverty_rate_300ppp")):
+                c = row.geometry.representative_point()
+                ax.annotate(f"{row['NAME_FR']}\n{row['poverty_rate_300ppp']:.0f}%", (c.x, c.y),
+                            fontsize=4.5, ha="center", va="center", color="black")
         ax.set_title("Taux de pauvreté monétaire — Afrique (World Bank)")
         ax.axis("off")
         plt.tight_layout()
